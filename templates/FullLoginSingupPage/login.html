@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Coding by Akash Debnath-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <link rel="stylesheet" href="/static/singup.css">
+   </head>
+<body>
+  <div class="wrapper">
+    <h2>Login</h2>
+    <form action="\home" method="post">
+    {% csrf_token %}
+      <div class="input-box">
+        <input type="text" id="loginemail" name="loginemail" placeholder="Enter your email" required>
+      </div>
+      <div class="input-box">
+        <input type="password" id="loginpass1" name="loginpass1" placeholder="Enter your password" required>
+      </div>
+      <div class="input-box button">
+        <input type="submit" value="Login">
+      </div>
+      <div class="text">
+        <h3>Don't have an account? <a href="/singup">Singup now</a></h3>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

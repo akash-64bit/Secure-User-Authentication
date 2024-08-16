@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.vid-parent{
+  position: relative;
+}
+video{
+  width: 100%;
+  height: 100%;
+}
+.vid-overlay{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: #225470;
+  z-index: 1;
+  opacity: 0.8;
+}
+.vid-content{
+  position: absolute;
+  z-index: 2;
+  top: 35%;
+  left: 35%;
+  text-align: center;
+  color: white;
+}
+.heading{
+  text-align: center;
+  color: rgb(242, 0, 0);
+}
